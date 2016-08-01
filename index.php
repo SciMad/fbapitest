@@ -23,31 +23,5 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-
-
-<h1 id="fb-welcome"></h1>
-
-
-<h1>
-<?php
-    echo "I am being loaded!!";  
-?>
-</h1>
-
-<script type="text/javascript">
-    function onLogin(response) {
-    if (response.status == 'connected') {
-    FB.api('/me?fields=first_name', function(data) {
-      var welcomeBlock = document.getElementById('fb-welcome');
-      welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
-    });
-  }
-}
-
-</script>
-
-
-
-
 </body>
 </html>
