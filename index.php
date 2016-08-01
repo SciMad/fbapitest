@@ -28,9 +28,8 @@
 <script type="text/javascript">
     
 function onLogin(response) {
-    console.log("I am working 11");
+    console.log(response);
     if (response.status == 'connected') {
-        console.log("I am connected 22");
         FB.api('/me?fields=first_name', function(data) {
             var welcomeBlock = document.getElementById('fb-welcome');
             welcomeBlock.innerHTML = 'Hello, ' + data.first_name + '!';
@@ -41,13 +40,9 @@ function onLogin(response) {
 
 
 FB.getLoginStatus(function(response) {
-
-    console.log("I am working 33");
     // Check login status on load, and if the user is
     // already logged in, go directly to the welcome message.
     if (response.status == 'connected') {
-        
-    console.log("I am working 44");
         onLogin(response);
     } else {
     // Otherwise, show Login dialog first.
