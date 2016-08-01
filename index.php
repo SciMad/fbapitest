@@ -11,7 +11,7 @@
 
     $helper = $fb->getRedirectLoginHelper();
     $permissions = ['email', 'user_likes']; // optional
-    $loginUrl = $helper->getLoginUrl('https://http://scimad-fbapitest.herokuapp.com/login-callback.php', $permissions);
+    $loginUrl = $helper->getLoginUrl('https://scimad-fbapitest.herokuapp.com/login-callback.php', $permissions);
 
     echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>'; 
 
