@@ -21,6 +21,7 @@
      js = d.createElement(s); js.id = id;
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
+     console.log("I am being Executed!!");
    }(document, 'script', 'facebook-jssdk'));
 </script>
 </body>
