@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FB-API test</title>
+</head>
+<body>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -17,8 +23,15 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
+
+
+
 <h1>
 <?php
     echo "I am being loaded!!";  
 ?>
 </h1>
+
+
+</body>
+</html>
